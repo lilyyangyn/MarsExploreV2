@@ -45,6 +45,7 @@
 		17E0EB1824922CFB00207246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17E0EB22249231A300207246 /* MCMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMap.h; sourceTree = "<group>"; };
 		17E0EB24249232E600207246 /* MCCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCCar.h; sourceTree = "<group>"; };
+		17E0EB252492349300207246 /* MCPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPosition.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 			children = (
 				17E0EB22249231A300207246 /* MCMap.h */,
 				17E0EB24249232E600207246 /* MCCar.h */,
+				17E0EB252492349300207246 /* MCPosition.h */,
 			);
 			path = MarsCar;
 			sourceTree = "<group>";
