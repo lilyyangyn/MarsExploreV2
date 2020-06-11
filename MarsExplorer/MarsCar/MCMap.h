@@ -6,7 +6,7 @@
 //  Copyright © 2020 宁. All rights reserved.
 //
 
-@class MCCar, MCPosition;
+@class MCCar, MCPositionDefine;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,10 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) NSUInteger width;
 @property (nonatomic, assign, readonly) NSUInteger length;
 
-@property (nonatomic, strong, readonly) MCCar *marsCar;
+@property (nonatomic, strong) MCCar *marsCar;
 
 -(instancetype)initWithMapSize:(CGSize)size;
--(void)landCar:(MCCar*)car withPosition:(MCPostion*) position;
+-(void)landCar:(MCCar*)car withPosition:(MCPositionDefine*) position;
 
 @end
 NS_ASSUME_NONNULL_END

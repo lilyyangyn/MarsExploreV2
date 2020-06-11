@@ -15,7 +15,7 @@ typedef NS_ENUM(NSUInteger, MCOrientation) {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MCPosition : NSObject
+@interface MCPositionDefine : NSObject
 
 @property (nonatomic, assign) NSUInteger x;
 

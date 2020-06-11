@@ -6,10 +6,11 @@
 //  Copyright © 2020 宁. All rights reserved.
 //
 
-@class MCPosition;
+@class MCPositionDefine;
 
 NS_ASSUME_NONNULL_BEGIN
 @interface MCCar : NSObject
-@property (nonatomic, strong) MCPosition *postion;
+@property (nonatomic, strong) MCPositionDefine *postion;
 
 @end
+NS_ASSUME_NONNULL_END
