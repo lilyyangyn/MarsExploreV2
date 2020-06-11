@@ -8,16 +8,9 @@
 
 #import "MCCommand.h"
 
-typedef NS_ENUM(NSUInteger, MCTurnDirection) {
-    MCTURNDIRECTION_LEFT,
-    MCTURNDIRECTION_RIGHT,
-};
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MCTurnCommand : MCCommand
-
-@property (nonatomic, assign) MCTurnDirection direction;
+@interface MCTurnLeftCommand : MCCommand
 
 @end
 
