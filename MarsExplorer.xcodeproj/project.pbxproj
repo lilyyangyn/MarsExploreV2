@@ -46,6 +46,7 @@
 		17E0EB22249231A300207246 /* MCMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMap.h; sourceTree = "<group>"; };
 		17E0EB24249232E600207246 /* MCCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCCar.h; sourceTree = "<group>"; };
 		17E0EB252492349300207246 /* MCPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPosition.h; sourceTree = "<group>"; };
+		17E0EB282492369C00207246 /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 		17E0EAF924922CF800207246 /* MarsExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				17E0EB262492362000207246 /* Command */,
 				17E0EB232492328F00207246 /* MarsCar */,
 				17E0EAFA24922CF800207246 /* AppDelegate.h */,
 				17E0EAFB24922CF800207246 /* AppDelegate.m */,
@@ -120,6 +122,14 @@
 				17E0EB252492349300207246 /* MCPosition.h */,
 			);
 			path = MarsCar;
+			sourceTree = "<group>";
+		};
+		17E0EB262492362000207246 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				17E0EB282492369C00207246 /* Command.h */,
+			);
+			path = Command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
