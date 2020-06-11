@@ -21,7 +21,7 @@
         newPosition.x -= self.step;
     } else if (newPosition.orientation == MCORIENTATION_NORTH){
         newPosition.y += self.step;
-    } else if (position.orientation == MCORIENTATION_SOUTH){
+    } else if (newPosition.orientation == MCORIENTATION_SOUTH){
         newPosition.x -= self.step;
     }
     return newPosition;
