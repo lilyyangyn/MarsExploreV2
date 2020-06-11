@@ -23,4 +23,9 @@
     return self;
 }
 
+- (void) printPosition
+{
+    NSLog(@"Position: (%lu, %lu)", (unsigned long)self.x, (unsigned long)self.y);
+}
+
 @end

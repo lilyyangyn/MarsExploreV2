@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) MCOrientation orientation;
 
 - (instancetype)initWithPoint:(CGPoint)point orientation:(MCOrientation)orientation;
+- (void) printPosition;
 
 @end
 
