@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MCCar.h"
 
 @implementation MCCar
-
-<#methods#>
 
 @end

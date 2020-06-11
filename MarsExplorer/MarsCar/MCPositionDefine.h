@@ -5,6 +5,8 @@
 //  Created by 宁 on 2020/6/11.
 //  Copyright © 2020 宁. All rights reserved.
 //
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, MCOrientation) {
     MCORIENTATION_NORTH,
