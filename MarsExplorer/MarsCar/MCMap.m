@@ -29,4 +29,15 @@
     self.marsCar = car;
 }
 
+-(BOOL)containsPosition:(MCPositionDefine*) position
+{
+    if (position.x < 0 || position.x > self.length) {
+        return FALSE;
+    }
+    if (position.y < 0 || position.y > self.width) {
+        return FALSE;
+    }
+    return TRUE;
+}
+
 @end

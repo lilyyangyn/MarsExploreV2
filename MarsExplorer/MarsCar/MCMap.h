@@ -5,6 +5,8 @@
 //  Created by 宁 on 2020/6/11.
 //  Copyright © 2020 宁. All rights reserved.
 //
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class MCCar, MCPositionDefine;
 
@@ -19,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(instancetype)initWithMapSize:(CGSize)size;
 -(void)landCar:(MCCar*)car withPosition:(MCPositionDefine*) position;
+
+-(BOOL)containsPosition:(MCPositionDefine*) position;
 
 @end
 NS_ASSUME_NONNULL_END
