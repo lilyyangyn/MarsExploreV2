@@ -14,7 +14,7 @@
 
 - (MCPositionDefine *)excuteWithCurrentPosition:(MCPositionDefine *)position
 {
-    MCPositionDefine *newPosition = [position copy];
+    MCPositionDefine *newPosition = [[MCPositionDefine alloc] initWithPoint:CGPointMake(position.x, position.y) orientation:position.orientation];
     if (newPosition.orientation == MCORIENTATION_EAST) {
         newPosition.x += self.step;
     } else if (newPosition.orientation == MCORIENTATION_WEST){
