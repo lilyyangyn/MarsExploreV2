@@ -6,13 +6,13 @@
 //  Copyright © 2020 宁. All rights reserved.
 //
 
-@class MCPositionDefine;
+@class MCPosition;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MCCommand : NSObject
 
-- (MCPositionDefine *)excuteWithCurrentPosition:(MCPositionDefine *)position;
+- (MCPosition *)excuteWithCurrentPosition:(MCPosition *)position;
 
 @end
 
