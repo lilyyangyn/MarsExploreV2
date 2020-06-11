@@ -31,10 +31,10 @@
 
 -(BOOL)containsPosition:(MCPositionDefine*) position
 {
-    if (position.x < 0 || position.x > self.length) {
+    if (position.x < 0 || position.x > self.width) {
         return FALSE;
     }
-    if (position.y < 0 || position.y > self.width) {
+    if (position.y < 0 || position.y > self.length) {
         return FALSE;
     }
     return TRUE;
