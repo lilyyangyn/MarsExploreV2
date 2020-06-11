@@ -33,6 +33,8 @@
     MCTurnLeftCommand *turn = [[MCTurnLeftCommand alloc] init];
     
     [MCCommandExecutor excuteCommandArray:@[move, turn] withCar:car onMap:map];
+    
+    NSLog(@"Position: (%lu, %lu)", (unsigned long)car.postion.x, (unsigned long)car.postion.y);
 }
 
 
