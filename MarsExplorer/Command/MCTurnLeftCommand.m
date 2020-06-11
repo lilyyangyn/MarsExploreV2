@@ -14,16 +14,17 @@
 
 - (MCPositionDefine *)excuteWithCurrentPosition:(MCPositionDefine *)position
 {
-    if (position.orientation == MCORIENTATION_EAST) {
-        position.orientation = MCORIENTATION_NORTH;
-    } else if (position.orientation == MCORIENTATION_WEST){
-        position.orientation = MCORIENTATION_SOUTH;
+    MCPositionDefine *newPosition = [position copy];
+    if (newPosition.orientation == MCORIENTATION_EAST) {
+        newPosition.orientation = MCORIENTATION_NORTH;
+    } else if (newPosition.orientation == MCORIENTATION_WEST){
+        newPosition.orientation = MCORIENTATION_SOUTH;
     } else if (position.orientation == MCORIENTATION_NORTH){
-        position.orientation = MCORIENTATION_WEST;
+        newPosition.orientation = MCORIENTATION_WEST;
     } else if (position.orientation == MCORIENTATION_SOUTH){
-        position.orientation = MCORIENTATION_EAST;
+        newPosition.orientation = MCORIENTATION_EAST;
     }
-    return position;
+    return newPosition;
 }
 
 @end
