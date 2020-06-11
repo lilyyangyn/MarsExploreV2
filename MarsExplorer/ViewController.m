@@ -7,6 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "ViewController.h"
+#import "MCMap.h"
+#import "MCCar.h"
+#import "MCPositionDefine.h"
+#import "MCMoveFrontCommand.h"
+#import "MCTurnLeftCommand.h"
+#import "MCCommandExecutor.h"
 
 @interface ViewController ()
 
@@ -16,7 +23,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    MCMap *map = [[MCMap alloc] initWithMapSize:CGSizeMake(50, 100)];
+    MCCar *car = [[MCCar alloc] init];
+    MCPositionDefine *position = [[MCPositionDefine alloc] initWithPoint:CGPointMake(10, 80) orientation:MCORIENTATION_EAST];
+    [map landCar:car withPosition:position];
+    
+    MCMoveFrontCommand *move = [[MCMoveFrontCommand alloc] init];
+    move.step = 3;
+    MCTurnLeftCommand *turn = [[MCTurnLeftCommand alloc] init];
+    
+    [MCCommandExecutor excuteCommandArray:@[move, turn] withCar:car onMap:map];
 }
 
 
